@@ -1,7 +1,17 @@
-/*
-Global Styles
-*/
-body {
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    article, aside {
+        flex: auto;
+        width: 100%;
+    }
+}
+
+/* Additional base styles */
+body.works_on_smartphone {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -17,9 +27,15 @@ main {
 article {
     flex: 2;
     overflow-y: auto;
+    padding: 15px;
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
-} 
+    padding: 15px;
+}
+
+header, footer {
+    padding: 15px;
+}
