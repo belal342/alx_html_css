@@ -1,4 +1,5 @@
-CSS Advanced Project
+CSS Advanced Project:
+
 This project is part of the ALX Front-End Curriculum. It focuses on building a fully styled and responsive web page based on a given Figma design.
 
 
