@@ -1,0 +1,112 @@
+/* Our Results Section */
+.our-results {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #071629;
+    color: white;
+    position: relative;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.our-results h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.description {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+.pentagons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.pentagon {
+    width: 190px;
+    height: 190px;
+    position: relative;
+    background: rgba(255, 101, 101, 0.2);
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.pentagon .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.percent {
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+/* Border effect */
+.pentagon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    border: 1px solid #FF6565;
+    opacity: 0.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .pentagons {
+        gap: 20px;
+    }
+    
+    .pentagon {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .percent {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .our-results {
+        padding: 60px 0;
+    }
+    
+    .pentagons {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .pentagon {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .percent {
+        font-size: 1.8rem;
+    }
+}
