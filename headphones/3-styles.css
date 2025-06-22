@@ -1,0 +1,80 @@
+/* Contact Us Section - Exact Match */
+.contact-us {
+    padding: 80px 0;
+    text-align: center;
+    background-color: white;
+}
+
+.container {
+    max-width: 340px;
+    margin: 0 auto;
+}
+
+.contact-us h2 {
+    font-size: 32px;
+    margin-bottom: 48px;
+    color: #000000;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    border: none;
+    border-bottom: 1px solid #979797;
+    padding: 8px 0;
+    font-size: 14px;
+    background: transparent;
+}
+
+.form-group textarea {
+    height: 15px;
+    resize: none;
+}
+
+.cta-button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 22px;
+    margin-top: 30px;
+    cursor: pointer;
+    width: fit-content;
+    align-self: center;
+    transition: opacity 0.3s;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .contact-us {
+        padding: 60px 20px;
+    }
+    
+    .container {
+        max-width: 100%;
+    }
+}
