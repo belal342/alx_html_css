@@ -1,0 +1,74 @@
+/* Import previous styles (header/hero) */
+@import url('0-styles.css');
+
+/* What We Do Section */
+.what-we-do {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #000000;
+}
+
+.section-description {
+    max-width: 680px;
+    margin: 0 auto 60px;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    padding: 20px;
+}
+
+.service-icon {
+    font-size: 100px;
+    color: #FF6565;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.service-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.service-description {
+    color: #000000;
+    line-height: 1.5;
+    
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .what-we-do {
+        padding: 60px 0;
+    }
+    
+    .service-icon {
+        font-size: 80px;
+    }
+}
